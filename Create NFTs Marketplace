@@ -1,0 +1,16 @@
+Jackone Feez Marketplace
+Code Snippets :
+import { createThirdwebClient, getContract } from "thirdweb";
+import { defineChain } from "thirdweb/chains";
+
+// create the client with your clientId, or secretKey if in a server environment
+const client = createThirdwebClient({ 
+  clientId: "YOUR_CLIENT_ID"
+ });
+
+// connect to your contract
+const contract = getContract({ 
+  client, 
+  chain: defineChain(2810), 
+  address: "0xBD98c9732505BF2f5CC7ca703DD53e1671bF1Ebb"
+});
