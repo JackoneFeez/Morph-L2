@@ -1,0 +1,16 @@
+MonkAi NFTs Collection
+Code Snippets :
+import { createThirdwebClient, getContract } from "thirdweb";
+import { defineChain } from "thirdweb/chains";
+
+// create the client with your clientId, or secretKey if in a server environment
+const client = createThirdwebClient({ 
+  clientId: "YOUR_CLIENT_ID"
+ });
+
+// connect to your contract
+const contract = getContract({ 
+  client, 
+  chain: defineChain(2810), 
+  address: "0xAD729eC28FC01c203902f1cB17C035E175E041a4"
+});
